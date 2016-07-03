@@ -1,1 +1,4 @@
+excluded:
+  - Pods
+  - R.generated.swift
 line_length: 150

@@ -13,4 +13,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        showWalkthroughIfNeeded()
+    }
+
+    //MARK: - private
+
+    private func showWalkthroughIfNeeded() {
+        if !AppConfig.didSelectFavoriteStyle() {
+            if let viewController: WalkthroughViewController = R.storyboard.main.walkthroughViewController() {
+                let navigationController: UINavigationController = UINavigationController(rootViewController: viewController)
+
+                presentViewController(navigationController, animated: true, completion: nil)
+            }
+        }
+    }
 }

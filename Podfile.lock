@@ -2,15 +2,21 @@ PODS:
   - Crashlytics (3.7.2):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
+  - R.swift (2.4.0):
+    - R.swift.Library (~> 2.2.0)
+  - R.swift.Library (2.2.0)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - R.swift
 
 SPEC CHECKSUMS:
   Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  R.swift: 0ef9c42dc6c94ac44a3c78a7639c73f855a8e159
+  R.swift.Library: 31a487b65381f37a7d203a6f1f935b43c9be35b0
 
-PODFILE CHECKSUM: 6ec9904662ce9fd2ca22e37fa6dc6443b0b5a19d
+PODFILE CHECKSUM: 6c26edf67e599d9bf988d90265e56edf0f7242bc
 
 COCOAPODS: 1.0.1

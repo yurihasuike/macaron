@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57EE2979A94743077931CD9B /* libPods-Macaron.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D8E1FCE29A46B13873080E /* libPods-Macaron.a */; };
+		5467AD1AA577485795A36780 /* Pods_Macaron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86988DDCF87D77B019E057D /* Pods_Macaron.framework */; };
+		733893E81D29D37F00C512E5 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893E71D29D37F00C512E5 /* WalkthroughViewController.swift */; };
+		733893EB1D29D5CE00C512E5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EA1D29D5CE00C512E5 /* R.generated.swift */; };
+		733893ED1D29D95B00C512E5 /* AppConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EC1D29D95B00C512E5 /* AppConfigType.swift */; };
+		733893EF1D29D9C500C512E5 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EE1D29D9C500C512E5 /* AppConfig.swift */; };
+		733893F21D29DD0200C512E5 /* NSUserDefaults+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */; };
 		73622F281D254372002AEC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73622F261D254372002AEC10 /* Main.storyboard */; };
 		73622F2A1D254372002AEC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73622F291D254372002AEC10 /* Assets.xcassets */; };
 		73622F2D1D254372002AEC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73622F2B1D254372002AEC10 /* LaunchScreen.storyboard */; };
@@ -17,8 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		10D8E1FCE29A46B13873080E /* libPods-Macaron.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Macaron.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		337D68850FF808B75369FA96 /* Pods-Macaron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaron.release.xcconfig"; path = "Pods/Target Support Files/Pods-Macaron/Pods-Macaron.release.xcconfig"; sourceTree = "<group>"; };
+		733893E71D29D37F00C512E5 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		733893EA1D29D5CE00C512E5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		733893EC1D29D95B00C512E5 /* AppConfigType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigType.swift; sourceTree = "<group>"; };
+		733893EE1D29D9C500C512E5 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserDefaults+Config.swift"; sourceTree = "<group>"; };
 		73622F1F1D254372002AEC10 /* Macaron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macaron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73622F271D254372002AEC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73622F291D254372002AEC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +37,7 @@
 		73622F3A1D25468F002AEC10 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BE0A281D254B0100054113 /* CrashReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporter.swift; sourceTree = "<group>"; };
 		F826E0203EE510BD35733210 /* Pods-Macaron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Macaron/Pods-Macaron.debug.xcconfig"; sourceTree = "<group>"; };
+		F86988DDCF87D77B019E057D /* Pods_Macaron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57EE2979A94743077931CD9B /* libPods-Macaron.a in Frameworks */,
+				5467AD1AA577485795A36780 /* Pods_Macaron.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +64,25 @@
 		0EA83DAD9B02498AE6001A16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10D8E1FCE29A46B13873080E /* libPods-Macaron.a */,
+				F86988DDCF87D77B019E057D /* Pods_Macaron.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		733893E61D29D36A00C512E5 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				733893E71D29D37F00C512E5 /* WalkthroughViewController.swift */,
+			);
+			path = Walkthrough;
+			sourceTree = "<group>";
+		};
+		733893F01D29DCF300C512E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		73622F161D254372002AEC10 = {
@@ -85,6 +111,7 @@
 				73622F291D254372002AEC10 /* Assets.xcassets */,
 				73622F2B1D254372002AEC10 /* LaunchScreen.storyboard */,
 				73622F2E1D254372002AEC10 /* Info.plist */,
+				733893EA1D29D5CE00C512E5 /* R.generated.swift */,
 			);
 			path = Macaron;
 			sourceTree = "<group>";
@@ -93,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				73622F361D25466B002AEC10 /* Application */,
+				733893F01D29DCF300C512E5 /* Extensions */,
 				73622F371D254672002AEC10 /* ViewController */,
 			);
 			path = Classes;
@@ -103,6 +131,8 @@
 			children = (
 				73622F3A1D25468F002AEC10 /* AppDelegate.swift */,
 				73BE0A281D254B0100054113 /* CrashReporter.swift */,
+				733893EC1D29D95B00C512E5 /* AppConfigType.swift */,
+				733893EE1D29D9C500C512E5 /* AppConfig.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -110,6 +140,7 @@
 		73622F371D254672002AEC10 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				733893E61D29D36A00C512E5 /* Walkthrough */,
 				73622F381D254689002AEC10 /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -130,6 +161,7 @@
 				FD1285FCC0B949DD63741103 /* [CP] Embed Pods Frameworks */,
 				749F840FBAFCA78D8EBD67A8 /* [CP] Copy Pods Resources */,
 				73BE0A271D254ABD00054113 /* Fabric */,
+				733893E91D29D4A200C512E5 /* Setup R.Swift */,
 			);
 			buildRules = (
 			);
@@ -187,6 +219,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		733893E91D29D4A200C512E5 /* Setup R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Setup R.Swift";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" \"$SRCROOT\"";
+		};
 		73622F341D254603002AEC10 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,8 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				73BE0A291D254B0100054113 /* CrashReporter.swift in Sources */,
+				733893ED1D29D95B00C512E5 /* AppConfigType.swift in Sources */,
+				733893E81D29D37F00C512E5 /* WalkthroughViewController.swift in Sources */,
+				733893EF1D29D9C500C512E5 /* AppConfig.swift in Sources */,
+				733893EB1D29D5CE00C512E5 /* R.generated.swift in Sources */,
 				73622F3B1D25468F002AEC10 /* AppDelegate.swift in Sources */,
 				73622F391D254689002AEC10 /* ViewController.swift in Sources */,
+				733893F21D29DD0200C512E5 /* NSUserDefaults+Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wgE-vg-F2q">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,6 +21,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFh-vr-Oui" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1006" y="415"/>
+        </scene>
+        <!--Walkthrough View Controller-->
+        <scene sceneID="jcy-G4-9cz">
+            <objects>
+                <viewController storyboardIdentifier="WalkthroughViewController" id="X94-qV-as6" customClass="WalkthroughViewController" customModule="Macaron" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lcu-jK-7R6"/>
+                        <viewControllerLayoutGuide type="bottom" id="iWH-cA-laD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gIy-as-zxg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="どんなスタイルが好きですか？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-KI-JlD">
+                                <rect key="frame" x="30" y="40" width="354" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVf-UH-Y3Y">
+                                <rect key="frame" x="40" y="81" width="334" height="30"/>
+                                <state key="normal" title="カジュアル"/>
+                                <connections>
+                                    <action selector="tapButton" destination="X94-qV-as6" eventType="touchUpInside" id="AJo-mR-CGe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i09-Kf-W9p">
+                                <rect key="frame" x="40" y="131" width="334" height="30"/>
+                                <state key="normal" title="フェミニン"/>
+                                <connections>
+                                    <action selector="tapButton" destination="X94-qV-as6" eventType="touchUpInside" id="nzG-nJ-HTd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aVf-UH-Y3Y" firstAttribute="top" secondItem="4qo-KI-JlD" secondAttribute="bottom" constant="20" id="2TU-1k-fYk"/>
+                            <constraint firstItem="4qo-KI-JlD" firstAttribute="leading" secondItem="gIy-as-zxg" secondAttribute="leadingMargin" constant="10" id="5x2-n0-Fnm"/>
+                            <constraint firstItem="aVf-UH-Y3Y" firstAttribute="leading" secondItem="gIy-as-zxg" secondAttribute="leadingMargin" constant="20" id="K8m-BF-6ly"/>
+                            <constraint firstItem="i09-Kf-W9p" firstAttribute="leading" secondItem="gIy-as-zxg" secondAttribute="leadingMargin" constant="20" id="OGY-0e-UlE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="i09-Kf-W9p" secondAttribute="trailing" constant="20" id="QLP-I3-qgJ"/>
+                            <constraint firstItem="i09-Kf-W9p" firstAttribute="top" secondItem="aVf-UH-Y3Y" secondAttribute="bottom" constant="20" id="kuk-D1-dqB"/>
+                            <constraint firstItem="4qo-KI-JlD" firstAttribute="top" secondItem="lcu-jK-7R6" secondAttribute="bottom" constant="20" id="plo-vq-JTq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4qo-KI-JlD" secondAttribute="trailing" constant="10" id="tNd-zH-T4R"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aVf-UH-Y3Y" secondAttribute="trailing" constant="20" id="tYs-dE-29Q"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4U-rO-vzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-280" y="-414"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
