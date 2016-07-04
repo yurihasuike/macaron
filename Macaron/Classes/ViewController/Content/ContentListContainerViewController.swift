@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ContentListContainerViewController.swift
 //  Macaron
 //
 //  Created by Kohei Tabata on 6/30/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ContentListContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
