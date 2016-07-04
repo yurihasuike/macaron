@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Macaron
+
+  Created by Kohei Tabata on 7/4/16.
+  Copyright © 2016 Team Hasuike. All rights reserved.
+*/
+
+"FashionStyleCasualTitle"         = "カジュアル";
+"FashionStyleFeminineTitle"       = "フェミニン";
+"FashionStyleNaturalStyleTitle"   = "ナチュラル系コーデ";
+"FashionStyleBohemianTitle"       = "ボヘミアン";
+"FashionStyleAmericanCasualTitle" = "アメカジ";
+"FashionStyleHarajukuStyleTitle"  = "原宿系";
+"FashionStyleEthnicTitle"         = "エスニック系";
+"FashionStyleFormalTitle"         = "フォーマル";

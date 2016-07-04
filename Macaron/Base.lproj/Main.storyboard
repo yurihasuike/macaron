@@ -85,7 +85,21 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMG-8a-xqe" customClass="ContentListSelectorView" customModule="Macaron" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="leX-AN-5uQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dMG-8a-xqe" secondAttribute="trailing" constant="-20" id="MU3-vy-kIw"/>
+                            <constraint firstItem="dMG-8a-xqe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Rwk-wc-A32"/>
+                            <constraint firstItem="dMG-8a-xqe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VVv-oP-Qor"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VRQ-OY-TnU"/>
                 </viewController>
