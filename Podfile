@@ -6,4 +6,5 @@ target 'Macaron' do
   pod 'Fabric'
   pod 'Crashlytics'
   pod 'R.swift'
+  pod 'SnapKit'
 end

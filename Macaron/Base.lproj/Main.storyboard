@@ -102,6 +102,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="VRQ-OY-TnU"/>
+                    <connections>
+                        <outlet property="contentListSelectorView" destination="dMG-8a-xqe" id="DGb-XL-zch"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -5,18 +5,21 @@ PODS:
   - R.swift (2.4.0):
     - R.swift.Library (~> 2.2.0)
   - R.swift.Library (2.2.0)
+  - SnapKit (0.21.1)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
   - R.swift
+  - SnapKit
 
 SPEC CHECKSUMS:
   Crashlytics: 130ab943f8c78cda7a814b434f270b2e2c8a3cba
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   R.swift: 0ef9c42dc6c94ac44a3c78a7639c73f855a8e159
   R.swift.Library: 31a487b65381f37a7d203a6f1f935b43c9be35b0
+  SnapKit: bbad04cb016c7cead63965f16b00c09318d271ee
 
-PODFILE CHECKSUM: 6c26edf67e599d9bf988d90265e56edf0f7242bc
+PODFILE CHECKSUM: a52303f788253c1988baae168dd210cbc32ce924
 
 COCOAPODS: 1.0.1
