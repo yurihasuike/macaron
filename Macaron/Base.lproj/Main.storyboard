@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R4U-rO-vzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="-414"/>
+            <point key="canvasLocation" x="-412" y="-410"/>
         </scene>
         <!--Content List Container View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -91,7 +91,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="415"/>
+            <point key="canvasLocation" x="-412" y="415"/>
+        </scene>
+        <!--Content List View Controller-->
+        <scene sceneID="zeO-eU-mJr">
+            <objects>
+                <viewController storyboardIdentifier="ContentListViewController" id="WKZ-Ql-zBl" customClass="ContentListViewController" customModule="Macaron" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kr8-hJ-Y4T"/>
+                        <viewControllerLayoutGuide type="bottom" id="8aS-Tn-we4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fLE-IN-A0d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8I-XI-XgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187" y="415"/>
         </scene>
     </scenes>
 </document>

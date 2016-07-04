@@ -14,6 +14,7 @@
 		733893EF1D29D9C500C512E5 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EE1D29D9C500C512E5 /* AppConfig.swift */; };
 		733893F21D29DD0200C512E5 /* NSUserDefaults+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */; };
 		73538DBE1D2A7FA4004D3465 /* ContentListContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73538DBD1D2A7FA4004D3465 /* ContentListContainerViewController.swift */; };
+		73538DC01D2A8784004D3465 /* ContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73538DBF1D2A8784004D3465 /* ContentListViewController.swift */; };
 		73622F281D254372002AEC10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73622F261D254372002AEC10 /* Main.storyboard */; };
 		73622F2A1D254372002AEC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73622F291D254372002AEC10 /* Assets.xcassets */; };
 		73622F2D1D254372002AEC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73622F2B1D254372002AEC10 /* LaunchScreen.storyboard */; };
@@ -29,6 +30,7 @@
 		733893EE1D29D9C500C512E5 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserDefaults+Config.swift"; sourceTree = "<group>"; };
 		73538DBD1D2A7FA4004D3465 /* ContentListContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListContainerViewController.swift; sourceTree = "<group>"; };
+		73538DBF1D2A8784004D3465 /* ContentListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListViewController.swift; sourceTree = "<group>"; };
 		73622F1F1D254372002AEC10 /* Macaron.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macaron.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73622F271D254372002AEC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73622F291D254372002AEC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				73538DBD1D2A7FA4004D3465 /* ContentListContainerViewController.swift */,
+				73538DBF1D2A8784004D3465 /* ContentListViewController.swift */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			files = (
 				73BE0A291D254B0100054113 /* CrashReporter.swift in Sources */,
 				733893ED1D29D95B00C512E5 /* AppConfigType.swift in Sources */,
+				73538DC01D2A8784004D3465 /* ContentListViewController.swift in Sources */,
 				733893E81D29D37F00C512E5 /* WalkthroughViewController.swift in Sources */,
 				733893EF1D29D9C500C512E5 /* AppConfig.swift in Sources */,
 				73538DBE1D2A7FA4004D3465 /* ContentListContainerViewController.swift in Sources */,
