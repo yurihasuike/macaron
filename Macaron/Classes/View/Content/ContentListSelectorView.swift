@@ -11,6 +11,8 @@ import UIKit
 @IBDesignable
 class ContentListSelectorView: UIScrollView {
 
+    var didTapContentListSelectorButton: ((FashionStyle) -> Void)?
+
     private var buttons: [ContentListSelectorButton] = []
 
     //MARK: - lifecycle
@@ -62,6 +64,7 @@ class ContentListSelectorView: UIScrollView {
             let button: ContentListSelectorButton = ContentListSelectorButton(fashionStyle: fashionStyle)
 
             button.frame = CGRect.init(x: minX, y: minY, width: button.intrinsicContentSize().width, height: height)
+            button.addTarget(self, action: #selector(tapContentListSelectorButton), forControlEvents: .TouchUpInside)
             buttons.append(button)
             addSubview(button)
 
@@ -69,5 +72,15 @@ class ContentListSelectorView: UIScrollView {
 
             contentSize = CGSize.init(width: minX, height: height)
         }
+    }
+
+    //MARK: - IBAction
+
+    @objc
+    private func tapContentListSelectorButton(sender: ContentListSelectorButton) {
+        for button in buttons {
+            button.updateSelectedState(button == sender)
+        }
+        didTapContentListSelectorButton?(sender.fashionStyle)
     }
 }

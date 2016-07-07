@@ -39,6 +39,21 @@ class ContentListContainerViewController: UIViewController, UIPageViewController
     //MARK: - private
 
     private func setupComponents() {
+        //ContentListSelectorView
+        contentListSelectorView.didTapContentListSelectorButton = {[weak self] fashionStyle in
+            guard let unwrapped = self else {
+                return
+            }
+
+            let newIndex: Int = fashionStyle.rawValue
+            let direction: UIPageViewControllerNavigationDirection = unwrapped.currentPageIndex < newIndex ? .Forward : .Reverse
+            unwrapped.pageViewController.setViewControllers([unwrapped.viewControllers[newIndex]],
+                                                            direction: direction,
+                                                            animated: true,
+                                                            completion: nil)
+        }
+
+        //UIPageViewController
         viewControllers = FashionStyle.allValues().map({
             let viewController: ContentListViewController = R.storyboard.main.contentListViewController()!
             viewController.updateStyle($0)
