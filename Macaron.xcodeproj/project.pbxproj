@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27E080D51D2E0CE3008096A1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E080D41D2E0CE3008096A1 /* R.generated.swift */; };
 		5467AD1AA577485795A36780 /* Pods_Macaron.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86988DDCF87D77B019E057D /* Pods_Macaron.framework */; };
 		733893E81D29D37F00C512E5 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893E71D29D37F00C512E5 /* WalkthroughViewController.swift */; };
-		733893EB1D29D5CE00C512E5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EA1D29D5CE00C512E5 /* R.generated.swift */; };
 		733893ED1D29D95B00C512E5 /* AppConfigType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EC1D29D95B00C512E5 /* AppConfigType.swift */; };
 		733893EF1D29D9C500C512E5 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893EE1D29D9C500C512E5 /* AppConfig.swift */; };
 		733893F21D29DD0200C512E5 /* NSUserDefaults+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */; };
@@ -27,9 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27E080D41D2E0CE3008096A1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		337D68850FF808B75369FA96 /* Pods-Macaron.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaron.release.xcconfig"; path = "Pods/Target Support Files/Pods-Macaron/Pods-Macaron.release.xcconfig"; sourceTree = "<group>"; };
 		733893E71D29D37F00C512E5 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
-		733893EA1D29D5CE00C512E5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		733893EC1D29D95B00C512E5 /* AppConfigType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigType.swift; sourceTree = "<group>"; };
 		733893EE1D29D9C500C512E5 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		733893F11D29DD0200C512E5 /* NSUserDefaults+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSUserDefaults+Config.swift"; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 				73622F261D254372002AEC10 /* Main.storyboard */,
 				73622F291D254372002AEC10 /* Assets.xcassets */,
 				73622F2B1D254372002AEC10 /* LaunchScreen.storyboard */,
+				27E080D41D2E0CE3008096A1 /* R.generated.swift */,
 				73622F2E1D254372002AEC10 /* Info.plist */,
-				733893EA1D29D5CE00C512E5 /* R.generated.swift */,
 				73538DC91D2A8DED004D3465 /* Localizable.strings */,
 			);
 			path = Macaron;
@@ -369,10 +369,10 @@
 				733893E81D29D37F00C512E5 /* WalkthroughViewController.swift in Sources */,
 				733893EF1D29D9C500C512E5 /* AppConfig.swift in Sources */,
 				73538DBE1D2A7FA4004D3465 /* ContentListContainerViewController.swift in Sources */,
-				733893EB1D29D5CE00C512E5 /* R.generated.swift in Sources */,
 				73622F3B1D25468F002AEC10 /* AppDelegate.swift in Sources */,
 				73538DCB1D2A8E0D004D3465 /* ContentListSelectorButton.swift in Sources */,
 				733893F21D29DD0200C512E5 /* NSUserDefaults+Config.swift in Sources */,
+				27E080D51D2E0CE3008096A1 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
