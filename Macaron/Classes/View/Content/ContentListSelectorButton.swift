@@ -12,7 +12,6 @@ class ContentListSelectorButton: UIButton {
 
     let fashionStyle: FashionStyle
 
-
     //MARK: - lifecycle
 
     init(fashionStyle: FashionStyle) {
@@ -27,6 +26,19 @@ class ContentListSelectorButton: UIButton {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+
+    //MARK: - public
+
+    func updateSelectedState(isSelected: Bool) {
+        selected = isSelected
+        if selected {
+            setTitleColor(.whiteColor(), forState: .Normal)
+            backgroundColor = .darkGrayColor()
+        } else {
+            setTitleColor(.darkGrayColor(), forState: .Normal)
+            backgroundColor = .whiteColor()
+        }
     }
 
     //MARK: - layout
