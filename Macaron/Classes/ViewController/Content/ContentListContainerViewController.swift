@@ -9,12 +9,17 @@
 import UIKit
 import SnapKit
 
-class ContentListContainerViewController: UIViewController, UIPageViewControllerDataSource {
+class ContentListContainerViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     @IBOutlet weak var contentListSelectorView: ContentListSelectorView!
     private let pageViewController: UIPageViewController = UIPageViewController(transitionStyle: .Scroll,
                                                                                 navigationOrientation: .Horizontal, options: nil)
     private var viewControllers: [ContentListViewController] = []
+    private var currentPageIndex: Int                        = 0 {
+        didSet {
+            updateContentListSelectorViewSelectedStyle()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +39,21 @@ class ContentListContainerViewController: UIViewController, UIPageViewController
     //MARK: - private
 
     private func setupComponents() {
+        //ContentListSelectorView
+        contentListSelectorView.didTapContentListSelectorButton = {[weak self] fashionStyle in
+            guard let unwrapped = self else {
+                return
+            }
+
+            let newIndex: Int = fashionStyle.rawValue
+            let direction: UIPageViewControllerNavigationDirection = unwrapped.currentPageIndex < newIndex ? .Forward : .Reverse
+            unwrapped.pageViewController.setViewControllers([unwrapped.viewControllers[newIndex]],
+                                                            direction: direction,
+                                                            animated: true,
+                                                            completion: nil)
+        }
+
+        //UIPageViewController
         viewControllers = FashionStyle.allValues().map({
             let viewController: ContentListViewController = R.storyboard.main.contentListViewController()!
             viewController.updateStyle($0)
@@ -42,7 +62,9 @@ class ContentListContainerViewController: UIViewController, UIPageViewController
         })
 
         pageViewController.dataSource = self
-        pageViewController.setViewControllers([viewControllers[0]], direction: .Forward, animated: true, completion: nil)
+        pageViewController.delegate   = self
+        pageViewController.setViewControllers([viewControllers[currentPageIndex]], direction: .Forward, animated: true, completion: nil)
+        updateContentListSelectorViewSelectedStyle()
 
         view.addSubview(pageViewController.view)
         addChildViewController(pageViewController)
@@ -64,6 +86,11 @@ class ContentListContainerViewController: UIViewController, UIPageViewController
 
             presentViewController(navigationController, animated: true, completion: nil)
         }
+    }
+
+    private func updateContentListSelectorViewSelectedStyle() {
+        let selectedStyle: FashionStyle = viewControllers[currentPageIndex].fashionStyle
+        contentListSelectorView.updateSelectedStyle(selectedStyle)
     }
 
     //MARK: - UIPageViewControllerDataSource
@@ -92,5 +119,21 @@ class ContentListContainerViewController: UIViewController, UIPageViewController
         let nextIndex: Int = index + 1
 
         return viewControllers[nextIndex]
+    }
+
+
+    //MARK: - UIPageViewControllerDelegate
+
+    func pageViewController(pageViewController: UIPageViewController,
+                            didFinishAnimating finished: Bool,
+                                               previousViewControllers: [UIViewController],
+                                               transitionCompleted completed: Bool) {
+        guard let
+            viewController = pageViewController.viewControllers![0] as? ContentListViewController,
+            index = viewControllers.indexOf(viewController) else {
+                return
+        }
+
+        currentPageIndex = index
     }
 }
