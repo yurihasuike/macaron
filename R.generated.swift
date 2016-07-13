@@ -39,8 +39,16 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 0 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
   struct nib {
+    /// Nib `ContentListCell`.
+    static let contentListCell = _R.nib._ContentListCell()
+    
+    /// `UINib(name: "ContentListCell", bundle: ...)`
+    static func contentListCell(_: Void) -> UINib {
+      return UINib(resource: R.nib.contentListCell)
+    }
+    
     private init() {}
   }
   
@@ -185,6 +193,17 @@ struct _R: Rswift.Validatable {
   }
   
   struct nib {
+    struct _ContentListCell: NibResourceType {
+      let bundle = _R.hostingBundle
+      let name = "ContentListCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIView? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? UIView
+      }
+      
+      private init() {}
+    }
+    
     private init() {}
   }
   
