@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wgE-vg-F2q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wgE-vg-F2q">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -121,8 +121,23 @@
                     <view key="view" contentMode="scaleToFill" id="fLE-IN-A0d">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hMa-R8-rfX">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="hMa-R8-rfX" firstAttribute="top" secondItem="fLE-IN-A0d" secondAttribute="top" id="e0t-mR-UAb"/>
+                            <constraint firstItem="8aS-Tn-we4" firstAttribute="top" secondItem="hMa-R8-rfX" secondAttribute="bottom" id="puZ-P1-OHn"/>
+                            <constraint firstItem="hMa-R8-rfX" firstAttribute="leading" secondItem="fLE-IN-A0d" secondAttribute="leading" id="qci-lI-XJ9"/>
+                            <constraint firstAttribute="trailing" secondItem="hMa-R8-rfX" secondAttribute="trailing" id="vcy-de-zPp"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="hMa-R8-rfX" id="8Ea-wC-8TS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h8I-XI-XgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
