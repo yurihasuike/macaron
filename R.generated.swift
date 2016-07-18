@@ -26,8 +26,16 @@ struct R: Rswift.Validatable {
     private init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 0 images.
+  /// This `R.image` struct is generated, and contains static references to 1 images.
   struct image {
+    /// Image `RankingImage`.
+    static let rankingImage = ImageResource(bundle: _R.hostingBundle, name: "RankingImage")
+    
+    /// `UIImage(named: "RankingImage", bundle: ..., traitCollection: ...)`
+    static func rankingImage(compatibleWithTraitCollection traitCollection: UITraitCollection? = nil) -> UIImage? {
+      return UIImage(resource: R.image.rankingImage, compatibleWithTraitCollection: traitCollection)
+    }
+    
     private init() {}
   }
   
@@ -197,8 +205,8 @@ struct _R: Rswift.Validatable {
       let bundle = _R.hostingBundle
       let name = "ContentListCell"
       
-      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> UIView? {
-        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? UIView
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [NSObject : AnyObject]? = nil) -> ContentListCell? {
+        return instantiateWithOwner(ownerOrNil, options: optionsOrNil)[0] as? ContentListCell
       }
       
       private init() {}

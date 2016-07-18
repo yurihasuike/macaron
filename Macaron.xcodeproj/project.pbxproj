@@ -26,6 +26,7 @@
 		73BE0A291D254B0100054113 /* CrashReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BE0A281D254B0100054113 /* CrashReporter.swift */; };
 		7F6906811D361D7D00C17851 /* ContentListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6906801D361D7D00C17851 /* ContentListCell.xib */; };
 		7F6906831D3657DE00C17851 /* ContentListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6906821D3657DE00C17851 /* ContentListCell.swift */; };
+		DB33C8A41D3C862600B63F91 /* ContentListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB33C8A31D3C862600B63F91 /* ContentListDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		73BE0A281D254B0100054113 /* CrashReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashReporter.swift; sourceTree = "<group>"; };
 		7F6906801D361D7D00C17851 /* ContentListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentListCell.xib; sourceTree = "<group>"; };
 		7F6906821D3657DE00C17851 /* ContentListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListCell.swift; sourceTree = "<group>"; };
+		DB33C8A31D3C862600B63F91 /* ContentListDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentListDataSource.swift; sourceTree = "<group>"; };
 		F826E0203EE510BD35733210 /* Pods-Macaron.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Macaron.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Macaron/Pods-Macaron.debug.xcconfig"; sourceTree = "<group>"; };
 		F86988DDCF87D77B019E057D /* Pods_Macaron.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Macaron.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -175,6 +177,7 @@
 				73538DCC1D2A8F96004D3465 /* Model */,
 				73538DC11D2A8A26004D3465 /* View */,
 				73622F371D254672002AEC10 /* ViewController */,
+				DB33C8A21D3C85F300B63F91 /* DataSource */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -197,6 +200,14 @@
 				733893E61D29D36A00C512E5 /* Walkthrough */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DB33C8A21D3C85F300B63F91 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				DB33C8A31D3C862600B63F91 /* ContentListDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -370,6 +381,7 @@
 			files = (
 				73BE0A291D254B0100054113 /* CrashReporter.swift in Sources */,
 				73538DC41D2A8A59004D3465 /* ContentListSelectorView.swift in Sources */,
+				DB33C8A41D3C862600B63F91 /* ContentListDataSource.swift in Sources */,
 				73538DCE1D2A8FAA004D3465 /* FashionStyle.swift in Sources */,
 				733893ED1D29D95B00C512E5 /* AppConfigType.swift in Sources */,
 				73538DC01D2A8784004D3465 /* ContentListViewController.swift in Sources */,

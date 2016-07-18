@@ -13,6 +13,21 @@ class ContentListViewController: UIViewController {
 
     //MARK: - public
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    let contentListDataSource = ContentListDataSource()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = contentListDataSource
+        
+        let cellNib = R.nib.contentListCell()
+        tableView.registerNib(cellNib, forCellReuseIdentifier: "ContentListCell")
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 300
+    }
+
     func updateStyle(fashionStyle: FashionStyle) {
         //TODO: implement contents
         self.fashionStyle = fashionStyle

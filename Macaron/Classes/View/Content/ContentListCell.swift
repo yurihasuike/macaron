@@ -10,15 +10,22 @@ import UIKit
 
 class ContentListCell: UITableViewCell {
 
+    @IBOutlet weak var rankingLabel: UILabel!
+    @IBOutlet weak var instaImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func setProperties(item: Int, image: UIImage) {
+        rankingLabel.text = "\(item)"
+        instaImageView.image = image
+    }
+    
+    override func prepareForReuse() {
+        rankingLabel.text = nil
+        instaImageView.image = nil
     }
 
 }
